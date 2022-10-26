@@ -11,7 +11,7 @@ def display_menu():
     print()
 
 def display_codes(countries):
-    cods = list(countries.keys())
+    codes = list(countries.keys())
     codes.sort()
     codes_line = "Country codes: "
     for code in codes:
@@ -20,7 +20,7 @@ def display_codes(countries):
 
 def view(countries):
     display_codes(countries)
-    code = input("Enter country codeL ")
+    code = input("Enter country code: ")
     code = code.upper()
     if code in countries:
         name = countries[code]
